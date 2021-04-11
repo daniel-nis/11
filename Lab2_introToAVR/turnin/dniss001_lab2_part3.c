@@ -23,7 +23,7 @@ while(1) {
 		pa3 = (PINA >> 3) & 0x01;*/
 
 		// 2) Perform computation
-		if (tmpA == 0x00 ) {
+		if ((tmpA & 0x0F) == 0x00 ) {
 			cnt = 0x04;
 		}
 		else if (tmpA == 0x01 || tmpA == 0x02 || tmpA == 0x04 || tmpA == 0x08 ) {
